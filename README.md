@@ -4,7 +4,7 @@
 2. 然后克隆你的仓库
 
 ```terminal
-  $ git clone https://github.com/[your_name]/class004.git
+  $ git clone https://github.com/[your_name]/railscampexcersices.git
 ```
 
 3. 修改完以后提交至github
