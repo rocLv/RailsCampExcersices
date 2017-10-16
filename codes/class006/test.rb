@@ -86,7 +86,6 @@ end
 
 check_include?([1, 3, 5, 7, 9, 11], 3)
 
-
 # excersice 1
 
 # arr = ["b", "a"] =>["b", "a"]
@@ -99,19 +98,16 @@ check_include?([1, 3, 5, 7, 9, 11], 3)
 # arr = arr.product([Array(1..3)]) =>[["b", [1, 2, 3]], ["a", [1, 2, 3]]]
 # arr.first.delete(arr.first.last) =>[1, 2, 3]
 
-
 # How do you print the word "example" from the following array?
 
 # arr = [["test", "hello", "world"],["example", "mem"]]
 # puts arr[1].first
-
 
 # arr = [15, 7, 18, 5, 12, 8, 5, 1]
 
 # arr.index(5) => 3
 # arr.index[5] => NoMethodError
 # arr[6] => 5
-
 
 # What is the vaalue of a, b, and c in the following program?
 
@@ -149,3 +145,16 @@ def arr_new(arr)
 end
 
 arr_new([3, 5, 1, 7, 2])
+
+def anagram(first_word, second_word)
+  if first_word.size == second_word.size && first_word != second_word &&
+     first_word.split('').sort == second_word.split('').sort
+    puts 'These two words are anagram!'
+  else
+    puts 'These two words are not anagram!'
+  end
+end
+anagram('apple', 'papel')
+anagram('word', 'world')
+anagram('book', 'book')
+anagram('banana', 'banono')
